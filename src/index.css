@@ -1,0 +1,60 @@
+/* File: src/index.css */
+@import "leaflet/dist/leaflet.css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+  body {
+    @apply text-gray-800 antialiased;
+  }
+}
+
+/* خلفية شبكية خفيفة (اختياري) */
+.bg-grid {
+  background-image:
+    radial-gradient(circle at 1px 1px, rgba(22,163,74,0.10) 1px, transparent 0),
+    radial-gradient(circle at 1px 1px, rgba(0,0,0,0.03) 1px, transparent 0);
+  background-size: 26px 26px, 90px 90px;
+}
+
+@layer utilities {
+  .container-page {
+    @apply mx-auto w-full max-w-6xl px-4;
+  }
+
+  .card-surface {
+    @apply rounded-3xl border border-gray-100 bg-white shadow-soft;
+  }
+
+  .chip {
+    @apply inline-flex items-center gap-2 rounded-full border border-gray-200 bg-white px-4 py-2
+           text-sm font-semibold text-gray-700 transition
+           hover:-translate-y-0.5 hover:border-green-200 hover:bg-green-50 hover:text-green-800;
+  }
+
+  /* ✅ سويبر بدون سكرول بار */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  /* ✅ تثبيت حجم Lottie داخل Container صغير (حتى لا يخبّص الديزاين) */
+  /* ✅ تثبيت حجم Lottie داخل Container صغير (بدون ما يفرض 100% على الكونتاينر نفسه) */
+.lottie-fit {
+  display: block;
+}
+
+.lottie-fit > div,
+.lottie-fit canvas,
+.lottie-fit svg {
+  width: 100% !important;
+  height: 100% !important;
+  display: block;
+}
+
+}
