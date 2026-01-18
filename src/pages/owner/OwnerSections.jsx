@@ -96,8 +96,7 @@ export default function OwnerSections() {
     <div className="space-y-4">
       <div className="rounded-2xl border border-gray-100 bg-gray-50 p-4">
         <div className="text-sm font-extrabold">إدارة أقسام المنيو</div>
-        <div className="mt-1 text-xs text-gray-500">القراءة تتم من Public API، والتعديل يتم عبر Owner API</div>
-      </div>
+         </div>
 
       {err ? <div className="rounded-xl bg-red-50 px-3 py-2 text-sm text-red-700">{err}</div> : null}
 
