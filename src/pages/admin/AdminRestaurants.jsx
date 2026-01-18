@@ -68,7 +68,7 @@ export default function AdminRestaurants() {
   return (
     <div className="space-y-4">
       <div className="rounded-2xl border border-gray-100 bg-gray-50 p-4">
-        <div className="text-sm font-extrabold">إدارة المطاعم (Admin)</div>
+        <div className="text-sm font-extrabold">إدارة المطاعم :</div>
         <div className="mt-1 text-xs text-gray-500">تفعيل/إيقاف + مميز</div>
       </div>
 
@@ -103,7 +103,7 @@ export default function AdminRestaurants() {
                       {r.isFeatured ? <Badge tone="yellow">Featured</Badge> : <Badge>Normal</Badge>}
                     </div>
                     <div className="mt-2 text-xs text-gray-500">
-                      Public: <span className="font-semibold text-green-700">/r/{r.slug}</span>
+                       <span className="font-semibold text-green-700">{r.slug}</span>
                     </div>
                   </div>
 

@@ -138,10 +138,8 @@ const deleteLogoFromServer = async () => {
       <div className="rounded-2xl border border-gray-100 bg-white p-5 shadow-[0_10px_25px_rgba(0,0,0,0.04)]">
         <div className="flex items-start justify-between gap-3">
           <div>
-            <div className="text-sm font-extrabold">رفع الصور (Cloudinary)</div>
-            <div className="text-xs text-gray-500 mt-1">
-              يتم حفظ روابط الصور فقط في قاعدة البيانات. (logo: file) و (covers: files)
-            </div>
+            <div className="text-sm font-extrabold">رفع الصور :</div>
+            
           </div>
 
           {loading ? (

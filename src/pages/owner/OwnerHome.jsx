@@ -109,7 +109,7 @@ export default function OwnerHome() {
               {restaurant.city} • {restaurant.type}
             </div>
             <div className="mt-2 text-xs text-gray-500">
-              Public Link: <span className="font-semibold text-green-700">/r/{restaurant.slug}</span>
+               <span className="font-semibold text-green-700">{restaurant.slug}</span>
             </div>
           </div>
         ) : (

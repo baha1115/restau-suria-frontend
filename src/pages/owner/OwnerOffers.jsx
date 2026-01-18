@@ -151,9 +151,6 @@ if (!restaurantId) return <EmptyState title="لا يوجد مطعم" hint="ال�
     <div className="space-y-4">
       <div className="rounded-2xl border border-gray-100 bg-gray-50 p-4">
         <div className="text-sm font-extrabold">عروض اليوم</div>
-        <div className="mt-1 text-xs text-gray-500">
-          ملاحظة: هذه الصفحة تعرض “العروض النشطة اليوم” فقط لأنها تأتي من /api/public/home (MVP).
-        </div>
       </div>
 
       {err ? <div className="rounded-xl bg-red-50 px-3 py-2 text-sm text-red-700">{err}</div> : null}

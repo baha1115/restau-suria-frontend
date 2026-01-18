@@ -160,7 +160,7 @@ export default function PublicLayout() {
                     سريع
                   </span>
                   <span className="inline-flex items-center rounded-full border border-gray-200 bg-white px-3 py-1 text-xs text-gray-600">
-                    مناسب للموبايل
+                    خدمة سريعة 
                   </span>
                 </div>
               </div>
@@ -224,7 +224,7 @@ export default function PublicLayout() {
                   واجهة عربية RTL
                 </span>
                 <span className="hidden sm:inline">•</span>
-                <span>تصميم خفيف وسريع</span>
+                <span>صحة وعافية</span>
               </div>
             </div>
           </div>
